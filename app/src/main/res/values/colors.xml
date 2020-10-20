@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FAFAFA</color>
+    <color name="titleBlack">#191919</color>
+    <color name="button">#F8F0FF</color>
+    <color name="rightButton">#FBF5FF</color>
+    <color name="rbt">#FFFFFF</color>
+    <color name="lbt">#ADA8B2</color>
+    <color name="pressBtn">#2B2B2B</color>
+    <color name="black">#1A1A1A</color>
+    <color name="pink">#E3666E</color>
+</resources>

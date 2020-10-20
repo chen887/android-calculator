@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/black"
+        tools:context=".MainActivity">
+
+    <!-- 输入与显示框 -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                  android:orientation="vertical"
+                  android:layout_weight="2">
+        <View android:layout_width="match_parent" android:layout_height="0dp"
+              android:layout_weight="1"/>
+        <EditText android:layout_width="match_parent" android:layout_height="0dp"
+                  android:cursorVisible="false"
+                  android:focusable="false"
+                  android:inputType="text"
+                  android:lines="1"
+                  android:id="@+id/inputTextView"
+                  android:layout_weight="2"
+                  android:gravity="center_vertical|right"
+                  android:paddingRight="20dp"
+                  android:background="@null"
+                  android:textColor="@color/pink"
+                  android:textSize="50sp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="0dp"
+                  android:id="@+id/outputTextView"
+                  android:layout_weight="2"
+                  android:gravity="right"
+                  android:textColor="@color/pink"
+                  android:paddingRight="20dp"
+                  android:textSize="25sp"/>
+    </LinearLayout>
+
+    <!-- 按钮 -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:orientation="horizontal">
+        <Button android:textColor="@color/rbt" android:id="@+id/acBtn" style="@style/buttonTheme" android:text="AC"/>
+        <ImageButton android:id="@+id/delBtn"
+                     style="@style/buttonTheme"
+                     android:src="@drawable/delete"/>
+        <Button android:textColor="@color/rbt" android:id="@+id/modBtn" style="@style/buttonTheme" android:text="%"/>
+        <Button style="@style/buttonTheme"
+                android:id="@+id/excBtn"
+                android:textColor="@color/rbt"
+                android:textSize="40sp"
+                android:text="÷"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:orientation="horizontal">
+        <Button android:id="@+id/sevenBtn" style="@style/buttonTheme" android:text="7"/>
+        <Button android:id="@+id/eightBtn" style="@style/buttonTheme" android:text="8"/>
+        <Button android:id="@+id/nineBtn" style="@style/buttonTheme" android:text="9"/>
+        <Button style="@style/buttonTheme"
+                android:id="@+id/mtpBtn"
+                android:textColor="@color/rbt"
+                android:textSize="40sp"
+                android:text="×"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:orientation="horizontal">
+        <Button android:id="@+id/fourBtn" style="@style/buttonTheme" android:text="4"/>
+        <Button android:id="@+id/fiveBtn" style="@style/buttonTheme" android:text="5"/>
+        <Button android:id="@+id/sixBtn" style="@style/buttonTheme" android:text="6"/>
+        <ImageButton style="@style/buttonTheme"
+                android:id="@+id/redBtn"
+                android:textColor="@color/rbt"
+                android:src="@drawable/reduce"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:orientation="horizontal">
+        <Button android:id="@+id/oneBtn" style="@style/buttonTheme" android:text="1"/>
+        <Button android:id="@+id/twoBtn" style="@style/buttonTheme" android:text="2"/>
+        <Button android:id="@+id/threeBtn" style="@style/buttonTheme" android:text="3"/>
+        <Button style="@style/buttonTheme"
+                android:id="@+id/addBtn"
+                android:textColor="@color/rbt"
+                android:textSize="40sp"
+                android:text="+"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="0dp"
+                  android:layout_weight="1"
+                  android:orientation="horizontal">
+        <Button android:textSize="50sp" android:id="@+id/pontBtn" style="@style/buttonTheme" android:text="."/>
+        <Button android:id="@+id/zeroBtn" style="@style/buttonTheme" android:text="0"/>
+        <Button android:id="@+id/bksBtn" style="@style/buttonTheme" android:text="(  )"/>
+        <ImageButton style="@style/buttonTheme"
+                android:id="@+id/eqtBtn"
+                android:textColor="@color/rbt"
+                android:src="@drawable/eqt"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
